@@ -6,13 +6,13 @@ public class usingArrays {
 	public static void main(String[] args) {
 		String[] array = new String[] { "First", "Second", "Third", "Fourth" };  
 		
-		///<Êä³öÊý×éµÄÄÚÈÝ
-		//Êä³öÊý×éµÄÃû×Ö
+		///<è¾“å‡ºæ•°ç»„çš„å†…å®¹
+		//è¾“å‡ºæ•°ç»„çš„åå­—
         System.out.println(array.toString());  
-        //Êä³öÊý×éµÄÄÚÈÝ
+        //è¾“å‡ºæ•°ç»„çš„å†…å®¹
         System.out.println(Arrays.toString(array));
         
-        //µ±Êý×éÖÐº¬ÓÐÄÚÇ¶Êý×éÊ±£¬ÐèÒªÓÃdeepToString
+        //å½“æ•°ç»„ä¸­å«æœ‰å†…åµŒæ•°ç»„æ—¶ï¼Œéœ€è¦ç”¨deepToString
         String[] arr1 = new String[] { "Fifth", "Sixth" };  
         String[] arr2 = new String[] { "Seventh", "Eigth" };  
         String[][] arrayOfArray = new String[][] { arr1, arr2 }; 

@@ -6,7 +6,7 @@ import java.util.List;
 public class usingLinkedList {
 	public static void main(String[] args) {
 		
-		//ÉêÇë¶şÎ¬List
+		//ç”³è¯·äºŒç»´List
 		List<List<Integer>> result = new LinkedList<List<Integer>>();
 	}
 }

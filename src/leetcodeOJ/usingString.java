@@ -1,5 +1,7 @@
 package leetcodeOJ;
 
+import java.util.Arrays;
+
 public class usingString {
 	public static void main(String[] args) {
 		String s = "aqs dfg hjx cvb";
@@ -21,6 +23,18 @@ public class usingString {
 		String string="whatever";
 		String reverse = new StringBuffer(string).reverse().toString();
 		System.out.println(reverse);
+		
+		
+		///<字符串排序
+		String sortStr = "ACDFE"; 
+	    char[] arrayCh = sortStr .toCharArray(); //1，把sortStr转换为字符数组
+	    Arrays.sort(arrayCh);//2，利用数组帮助类自动排序
+	    System.out.println(Arrays.toString(arrayCh));//3，输出
+	    //注：这样的话输出结果为：[A, C, D, E, F]
+	    
+	    String sortedStr=new String(arrayCh);  //加上这句
+	    System.out.println(sortedStr);
+	    //输出结果为：ACDEF
 		
 		
 	}
