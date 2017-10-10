@@ -15,7 +15,7 @@ public class solution_389 {
 		
 		for(int i = 0; i < char_s.length; ++i) {
 			if(char_s[i] != char_t[i])
-				return char_t[i]; //PS：返回的应是数组char_t里的元素
+				return char_t[i]; //PS锛氳繑鍥炵殑搴旀槸鏁扮粍char_t閲岀殑鍏冪礌
 		}
 		
 		return char_t[t.length()-1];
