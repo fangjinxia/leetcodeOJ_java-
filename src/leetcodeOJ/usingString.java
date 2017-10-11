@@ -36,6 +36,18 @@ public class usingString {
 	    System.out.println(sortedStr);
 	    //输出结果为：ACDEF
 		
+	    
+	    /*
+	     * StringBuilder
+	     * 
+	     * 方法有：
+	     * insert、replace、substring、reverse、delete等
+	     * 最常用append、toString
+	     */
+	    StringBuilder str1 = new StringBuilder();
+	    String[] strArrs = {"ASDF", "sfaaf", "aerht", "arh"};
+	    for(String ss : strArrs)
+	    	str1.append(ss);//若存在循环,拼接字符串,这种方法更好
 		
 	}
 }
