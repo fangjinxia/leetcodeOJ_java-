@@ -48,6 +48,21 @@ public class usingString {
 	    String[] strArrs = {"ASDF", "sfaaf", "aerht", "arh"};
 	    for(String ss : strArrs)
 	    	str1.append(ss);//若存在循环,拼接字符串,这种方法更好
+	    
+	    ///<查找子串str在字符串s中出现的次数
+	    String str = new String();
+	  		int sum = 0;
+	  		while(true) {
+	  			int tmp = s.indexOf(str);
+	  			if(tmp != -1) {
+	  				++sum;
+	  				s = s.substring(tmp + str.length());
+	  			}
+	  			else
+	  				break;
+	  		}
+	  		
+	  		System.out.println(sum);
 		
 	}
 }
