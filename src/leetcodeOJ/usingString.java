@@ -37,6 +37,12 @@ public class usingString {
 	    //输出结果为：ACDEF
 		
 	    
+	    ///<String与Integer 互相转换
+	    int num = 0;
+	    String a = String.valueOf(num);
+	    num = Integer.parseInt(a);
+	    
+	    
 	    /*
 	     * StringBuilder
 	     * 
