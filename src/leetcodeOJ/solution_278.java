@@ -6,7 +6,7 @@ import leetcodeOJ.TreeNode;
 
 public class solution_278 {
 	/*
-	 */
+	 
 	boolean isBadVersion(int version);
 	
 	protected static int firstBadVersion(int n) {
@@ -25,6 +25,7 @@ public class solution_278 {
         return low;
 	}
 	
+	*/
 	public static void main(String[] args) {
 		//String[] strs = {"Hello","Alaska","Dad","Peace"};
 		//String[] res = findWords(strs);
