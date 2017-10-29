@@ -3,52 +3,28 @@ package leetcodeOJ;
 import java.util.*;
 
 public class solution_240 {
-	public static List<Integer> majorityElement(int[] nums) {
-		int n = nums.length;
-		List<Integer> res = new ArrayList<>(); 
-		if(n < 1)
-			return res;
+	public static boolean searchMatrix(int[][] matrix, int target) {
+		int n = matrix.length;
+		if(n == 0)
+			return false;
+		int m = matrix[0].length;
 		
-		int cnt1 = 0, cnt2 = 0;
-		int num1 = nums[0];
-		int num2 = nums[0];
-		for(int i = 0; i < n; ++i){
-			if(nums[i] == num1){
-				++cnt1;
+		int i = 0, j = m-1;
+		while(true){
+			if(i >= n || j < 0)
+				break;
+			if(matrix[i][j] == target){
+				return true;
 			}
-			else if(nums[i] == num2){
-				++cnt2;
-			}			
-			else if(cnt1 == 0){
-				cnt1 = 1;
-				num1 = nums[i];
-			}
-			else if(cnt2 == 0){
-				cnt2 = 1;
-				num2 = nums[i];
+			else if(matrix[i][j] > target){
+				--j;
 			}
 			else{
-				--cnt1;
-				--cnt2;
+				++i;
 			}
 		}
 		
-		cnt1 = 0;
-		cnt2 = 0;
-		for(int c : nums){
-			if(c == num1)
-				++cnt1;
-			else if(c == num2){
-				++cnt2;
-			}			
-		}
-		
-		if(cnt1 > n/3)
-			res.add(num1);
-		if(cnt2 > n/3)
-			res.add(num2);
-		
-		return res;
+		return false;
 	}
 	
 	
