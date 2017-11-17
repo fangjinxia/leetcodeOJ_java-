@@ -21,7 +21,7 @@ public class solution_312 {
 	    return dp[0][nums.length - 1];
 	}
 
-	private int getValue(int[] nums, int i) { // Deal with num[-1] and num[num.length]
+	private static int getValue(int[] nums, int i) { // Deal with num[-1] and num[num.length]
 	    if (i < 0 || i >= nums.length) {
 	        return 1;
 	    }
