@@ -14,14 +14,26 @@ public class solution_347 {
 			mp.put(item, mp.getOrDefault(item, 0)+1);
 		}
 		
-//		TreeMap<Integer, In>
-		return result;
+		List<Integer>[] bucket = new List[nums.length + 1];
+		for(int key : mp.keySet()){
+			int freq = mp.get(key);
+			if(bucket[freq] == null)
+				bucket[freq] = new ArrayList<>();
+			bucket[freq].add(key);
+		}
+		
+		for(int i = bucket.length-1; i >= 0 && result.size() < k; --i) {
+			while(bucket[i] == null) {
+				--i;
+			}
+			result.addAll(bucket[i]);
+		}
+		
+		return result.subList(0, k);
 	}
 	
 	public static void main(String[] args) {
-		//String[] strs = {"Hello","Alaska","Dad","Peace"};
-		//String[] res = findWords(strs);
-		//System.out.println(Arrays.toString(res));
+		
 	}
 }
  
