@@ -9,9 +9,9 @@ public class solution_222 {
         int lh = height(root.left);
         int rh = height(root.right);     
         if(lh == rh) 
-           return (1 << lh) + countNodes(root.right);  /*1(¸ù½Úµã) + (1<<lh)-1(ÍêÈ«×ó×ÓÊ÷) + # of rightNode */               
+           return (1 << lh) + countNodes(root.right);  /*1(æ ¹èŠ‚ç‚¹) + (1<<lh)-1(å®Œå…¨å·¦å­æ ‘) + # of rightNode */               
         else 
-           return (1 << rh) + countNodes(root.left);  /*1(¸ù½Úµã) + (1<<rh)-1(ÍêÈ«ÓÒ×ÓÊ÷) + # of leftNode*/
+           return (1 << rh) + countNodes(root.left);  /*1(æ ¹èŠ‚ç‚¹) + (1<<rh)-1(å®Œå…¨å³å­æ ‘) + # of leftNode*/
     }
 
     public int height(TreeNode root){ //get the height of a complete binary tree.
